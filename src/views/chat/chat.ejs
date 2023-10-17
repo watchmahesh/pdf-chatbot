@@ -1,0 +1,23 @@
+<!-- views/chat.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot</title>
+</head>
+<body>
+  <h1>Chatbot</h1>
+  <div id="chat">
+    <div class="user">
+      <strong>You:</strong> <%= userMessage %>
+    </div>
+    <div class="bot">
+      <strong>Chatbot:</strong> <%= chatbotResponse %>
+    </div>
+  </div>
+  <br>
+  <form action="/chat" method="post">
+    <input type="text" name="message" />
+    <input type="submit" value="Send" />
+  </form>
+</body>
+</html>

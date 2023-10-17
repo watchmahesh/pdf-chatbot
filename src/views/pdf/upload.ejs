@@ -1,0 +1,14 @@
+<!-- views/upload.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Converter</title>
+</head>
+<body>
+  <h1>PDF Converter</h1>
+  <form action="/pdf/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="pdfFile" accept=".pdf">
+    <button type="submit">Convert PDF</button>
+  </form>
+</body>
+</html>
